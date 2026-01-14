@@ -16,6 +16,24 @@
         <section class="body">
           {{ .Content }}
         </section>
+
+        <!-- DISCLAIMER BOX - ADD THIS -->
+        <div class="disclaimer-box">
+          <div class="disclaimer-content">
+            <h3>Legal Disclaimer and Educational Notice</h3>
+            <p>This research and all associated proof-of-concept (PoC) code are provided strictly for <strong>educational and defensive security purposes only</strong>. All vulnerability testing, exploitation, and reproduction were conducted exclusively in isolated, privately-owned laboratory environments with no connection to production systems or networks.</p>
+            <p><strong>Unauthorized access to computer systems is illegal</strong> under laws including but not limited to the Computer Fraud and Abuse Act (CFAA) in the United States, the Computer Misuse Act in the United Kingdom, and similar legislation worldwide. The techniques documented here must only be used:</p>
+            <ul>
+              <li>On systems you own or have explicit written authorization to test</li>
+              <li>In controlled lab environments (virtual machines, containers, isolated networks)</li>
+              <li>For legitimate security research, penetration testing with proper authorization, or educational purposes</li>
+            </ul>
+            <p>The author <strong>does not condone, encourage, or support</strong> any malicious, unauthorized, or illegal use of this information. Any person who uses the information or code provided here for unlawful purposes does so entirely at their own risk and liability.</p>
+            <p class="disclaimer-footer">By reading and using this material, you acknowledge that you understand these terms and agree to use this knowledge responsibly and ethically. The author assumes no liability for misuse of this information.</p>
+          </div>
+        </div>
+        <!-- END DISCLAIMER -->
+
         <div class="post-tags">
           {{ if ne .Type "page" }}
           {{ if gt .Params.tags 0 }}
